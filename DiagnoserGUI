@@ -1,0 +1,152 @@
+from tkinter import *
+
+answer1 = False 
+answer2 = False 
+answer3 = False 
+answer4 = False 
+answer5 = False 
+
+
+window1 = Tk()
+window1.title("Diagnoser")
+frame = Frame(master=window1, width = 400, height = 400, bg="#99ffff")
+frame.pack()
+lbl1 = Label(master=frame, text="do you have pressure", font=("arial bold", 28), bg="#99ffff", fg="#003333")
+lbl1.place(x=0, y=0)
+lbl2 = Label(master=frame, text="in your face or ears?", font=("arial bold", 28), bg="#99ffff", fg="#003333")
+lbl2.place(x=1, y=40)
+def clicked1() :
+    lbl1.configure(text="you have a cold")
+    lbl2.destroy()
+    btn1.destroy()
+    btn2.destroy()
+def clicked() :
+    window1.destroy()
+    global answer1 
+    answer1 = True 
+btn1 = Button(frame, text="yes", bg="#003333", fg="green", command=clicked1, width=25, height=12)
+btn2 = Button(frame, text="no", bg="#003333", fg="red", command=clicked, width=25, height=12)
+btn1.place(x=1, y=140)
+btn2.place(x=214, y=140)
+window1.mainloop()
+
+
+if answer1 == True:
+    window2 = Tk()
+    window2.title("Diagnoser")
+    frame = Frame(master=window2, width = 400, height = 400, bg="#99ffff")
+    frame.pack()
+    lbl1 = Label(master=frame, text="do you have pressure", font=("arial bold", 28), bg="#99ffff", fg="#003333")
+    lbl1.place(x=0, y=0)
+    lbl2 = Label(master=frame, text="in your face or ears?", font=("arial bold", 28), bg="#99ffff", fg="#003333")
+    lbl2.place(x=1, y=40)
+    def clicked1() :
+        lbl1.configure(text="you have a cold")
+        lbl2.destroy()
+        btn1.destroy()
+        btn2.destroy()
+    def clicked() :
+        window2.destroy()
+        global answer2 
+        answer2 = True 
+    btn1 = Button(frame, text="yes", bg="#003333", fg="green", command=clicked1, width=25, height=12)
+    btn2 = Button(frame, text="no", bg="#003333", fg="red", command=clicked, width=25, height=12)
+    btn1.place(x=1, y=140)
+    btn2.place(x=214, y=140)
+    window2.mainloop()
+
+if answer1 and answer2 == True:
+    window3 = Tk()
+    window3.title("Diagnoser")
+    frame = Frame(master=window3, width = 400, height = 400, bg="#99ffff")
+    frame.pack()
+    lbl1 = Label(master=frame, text="do you have pressure", font=("arial bold", 28), bg="#99ffff", fg="#003333")
+    lbl1.place(x=0, y=0)
+    lbl2 = Label(master=frame, text="in your face or ears?", font=("arial bold", 28), bg="#99ffff", fg="#003333")
+    lbl2.place(x=1, y=40)
+    def clicked1() :
+        lbl1.configure(text="you have a cold")
+        lbl2.destroy()
+        btn1.destroy()
+        btn2.destroy()
+    def clicked() :
+        window3.destroy()
+        global answer3 
+        answer3 = True 
+    btn1 = Button(frame, text="yes", bg="#003333", fg="green", command=clicked1, width=25, height=12)
+    btn2 = Button(frame, text="no", bg="#003333", fg="red", command=clicked, width=25, height=12)
+    btn1.place(x=1, y=140)
+    btn2.place(x=214, y=140)
+    window3.mainloop()
+
+if answer1 and answer2 and answer3 == True:
+    window4 = Tk()
+    window4.title("Diagnoser")
+    frame = Frame(master=window4, width = 400, height = 400, bg="#99ffff")
+    frame.pack()
+    lbl1 = Label(master=frame, text="do you have pressure", font=("arial bold", 28), bg="#99ffff", fg="#003333")
+    lbl1.place(x=0, y=0)
+    lbl2 = Label(master=frame, text="in your face or ears?", font=("arial bold", 28), bg="#99ffff", fg="#003333")
+    lbl2.place(x=1, y=40)
+    def clicked1() :
+        lbl1.configure(text="you have a cold")
+        lbl2.destroy()
+        btn1.destroy()
+        btn2.destroy()
+    def clicked() :
+        window4.destroy()
+        global answer4 
+        answer4 = True 
+    btn1 = Button(frame, text="yes", bg="#003333", fg="green", command=clicked1, width=25, height=12)
+    btn2 = Button(frame, text="no", bg="#003333", fg="red", command=clicked, width=25, height=12)
+    btn1.place(x=1, y=140)
+    btn2.place(x=214, y=140)
+    window4.mainloop()
+
+if answer1 and answer2 and answer3 and answer4 == True:
+    window5 = Tk()
+    window5.title("Diagnoser")
+    frame = Frame(master=window5, width = 400, height = 400, bg="#99ffff")
+    frame.pack()
+    lbl1 = Label(master=frame, text="do you have pressure", font=("arial bold", 28), bg="#99ffff", fg="#003333")
+    lbl1.place(x=0, y=0)
+    lbl2 = Label(master=frame, text="in your face or ears?", font=("arial bold", 28), bg="#99ffff", fg="#003333")
+    lbl2.place(x=1, y=40)
+    def clicked1() :
+        lbl1.configure(text="you have a cold")
+        lbl2.destroy()
+        btn1.destroy()
+        btn2.destroy()
+    def clicked() :
+        window5.destroy()
+        global answer5
+        answer5 = True 
+    btn1 = Button(frame, text="yes", bg="#003333", fg="green", command=clicked1, width=25, height=12)
+    btn2 = Button(frame, text="no", bg="#003333", fg="red", command=clicked, width=25, height=12)
+    btn1.place(x=1, y=140)
+    btn2.place(x=214, y=140)
+    window5.mainloop()
+
+if answer1 and answer2 and answer3 and answer4 and answer5 == True:
+    window6 = Tk()
+    window6.title("Diagnoser")
+    frame = Frame(master=window6, width = 400, height = 400, bg="#99ffff")
+    frame.pack()
+    lbl1 = Label(master=frame, text="do you have pressure", font=("arial bold", 28), bg="#99ffff", fg="#003333")
+    lbl1.place(x=0, y=0)
+    lbl2 = Label(master=frame, text="in your face or ears?", font=("arial bold", 28), bg="#99ffff", fg="#003333")
+    lbl2.place(x=1, y=40)
+    def clicked1() :
+        lbl1.configure(text="you have a cold")
+        lbl2.destroy()
+        btn1.destroy()
+        btn2.destroy()
+    def clicked() :
+        window6.destroy()
+        global answer6
+        answer6 = True 
+    btn1 = Button(frame, text="yes", bg="#003333", fg="green", command=clicked1, width=25, height=12)
+    btn2 = Button(frame, text="no", bg="#003333", fg="red", command=clicked, width=25, height=12)
+    btn1.place(x=1, y=140)
+    btn2.place(x=214, y=140)
+    window6.mainloop()
