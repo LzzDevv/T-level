@@ -1,1 +1,47 @@
+from tkinter import *
+
+
+window = Tk()
+
+window.title("login screen")
+
+frame = Frame(master=window, width = 250, height = 300)
+frame.pack()
+
+lbl1 = Label(text="username", master=frame)
+entry = Entry()
+lbl1.place(x=95, y=0)
+entry.place(x=65, y=19)
+
+lbl2 = Label(text="password", master=frame)
+entry2 = Entry()
+lbl2.place(x=95, y=50)
+entry2.place(x=65, y=69)
+
+users = { 
+    "username": "luke",
+    "password": "ABC123"
+}
+
+
+
+def clicked():
+
+    password = entry2.get()
+    username = entry.get()
+
+    if password == users["password"] and username == users["username"]:
+        window.destroy()
+
+btn = Button(text="LogIn", height = 2, width = 4, command=clicked)
+btn.place(x=105, y=100)
+
+
+window.mainloop()
+
+
+
+
+window1 = Tk()
+window1.mainloop
 
