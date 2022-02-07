@@ -1,0 +1,43 @@
+LoggedIn = False
+
+staff = [
+  {
+  "username": "luke",
+  "password": "123",
+},
+{
+  "username": "jack",
+  "password": "Mustang",
+}
+]
+
+student = [
+  {
+  "username": "joe",
+  "password": "ford",
+},
+{
+  "username": "ashfak",
+  "password": "BMW",
+}
+]
+
+
+
+
+while LoggedIn != True:
+  
+  username = input("what is your user name: ")
+  pas  = input("what is your password: ")
+
+  for staff in staff:
+    if staff["username"] == username and staff["password"] == pas:
+      print("logged in")
+      LoggedIn = True
+      
+  
+  for student in student:
+    if student["username"] == username and student["password"] == pas:
+      print("logged in")
+      LoggedIn = True
+      
